@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .table{display: table;width:100%;border-top: 1px solid #dadada;border-left: 1px solid #dadada;margin-top: -1px;background:pink;}
+        .table-cell{display: table-cell;border-right: 1px solid #dadada;border-bottom: 1px solid #dadada;}
+        .table-cell .col:not(:last-child){border-bottom: 1px solid #dadada}
+        @media (max-width: 768px) {
+            .table{display: block}
+            .table-cell{display: block}
+        }
+    </style>
+</head>
+<body>
+<div class="table">
+    <div class="table-cell">1</div>
+    <div class="table-cell">2</div>
+    <div class="table-cell">3</div>
+    <div class="table-cell">4</div>
+    <div class="table-cell">5</div>
+</div>
+<div class="table">
+    <div class="table-cell">1</div>
+    <div class="table-cell">2</div>
+    <div class="table-cell">3</div>
+    <div class="table-cell">4</div>
+</div>
+<div class="table">
+    <div class="table-cell">1</div>
+    <div class="table-cell">2</div>
+    <div class="table-cell">
+        <div class="col">1</div>
+        <div class="col">2</div>
+    </div>
+</div>
+</body>
+</html>
